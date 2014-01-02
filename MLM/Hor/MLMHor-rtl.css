@@ -1,0 +1,37 @@
+#publicMenu{
+    direction: rtl;
+    text-align: right;
+}
+#publicMenu li{
+    float:right;
+}
+
+#publicMenu li ul a{
+    float:right;/*neccessary - li falls one step down*/
+}
+
+#publicMenu li ul ul {
+    right:12em;
+    margin-right:2.1em;
+}
+
+#publicMenu>li>a{
+    border-left:1px solid #4C6930;
+    border-right:0;
+}
+
+.bgDown{
+    background-image: url(Down.png);
+    background-repeat:no-repeat;
+    background-position: 4% 57%;
+}
+.bgSide{
+    background-image: url(Left.png);
+    background-repeat:no-repeat;
+    background-position: 4% 57%;
+}
+/*Footer*/
+#publicMenuFooter li{
+    float:right;
+    margin-right: 10px;
+}

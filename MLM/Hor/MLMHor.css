@@ -1,0 +1,110 @@
+#publicMenu{
+    direction: ltr;
+    text-align: left;
+    z-index:1;
+}
+#publicMenu, #publicMenu ul{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    list-style-position:inside;/*icons inside or outside, since list-style-type:none; removing doesn't mean bother*/
+    font-weight: bold;
+    position:relative;
+    display: inline-block;/*For just IE*/;
+    line-height:3em;
+    margin: 0 auto;
+}
+#publicMenu a:link, #publicMenu a:active, #publicMenu a:visited{
+    display:block;
+    padding:0 1.15em;
+    color:#ffffff;
+    text-decoration:none;
+    background-color:#789E44;
+}
+
+#publicMenu>li>a{
+    border-right:1px solid #4C6930;
+    border-left:none;
+}
+
+#publicMenu>li:last-child>a{
+    border:none;
+}
+
+#publicMenu a:hover{
+    background-color:#4C6930;
+}
+#publicMenu li{
+    float:left;
+    position:relative;/*No use*/
+}
+
+#publicMenu ul {
+    position:absolute; /*Make the <li>s appear in front ant of calling elements not under*/
+    width:12em;
+    top:3em;/*No need - The same value as line height*/
+    display:none;
+}
+
+#publicMenu li ul a{
+    width:12em;
+    float:left;/*neccessary - li falls one step down*/
+    border-bottom: 0.1em solid #4C6930;
+}
+
+#publicMenu ul ul{
+    top:auto;/*no use*/
+}
+
+#publicMenu li ul ul {
+    left:12em;
+    margin-left:2.1em;
+}
+
+#publicMenu li:hover ul ul, #publicMenu li:hover ul ul ul, #publicMenu li:hover ul ul ul ul{
+    display:none;
+}
+#publicMenu li:hover ul, #publicMenu li li:hover ul, #publicMenu li li li:hover ul, #publicMenu li li li li:hover ul{
+    display:block;
+}
+#publicMenu a.current
+{
+    background-color: white;
+    color:black;
+}
+
+.bgDown{
+    background-image: url(Down.png);
+    background-repeat:no-repeat;
+    background-position: 91% 57%;
+}
+.bgSide{
+    background-image: url(Right.png);
+    background-repeat:no-repeat;
+    background-position: 91% 57%;
+}
+/*footer*/
+#publicMenuFooter{
+    direction: ltr;
+    text-align: left;
+    z-index:1;
+}
+#publicMenuFooter{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    list-style-position:inside;/*icons inside or outside, since list-style-type:none; removing doesn't mean bother*/
+    font-weight: bold;
+    position:relative;
+    display: inline-block;/*For just IE*/;
+    margin: 0 auto;
+}
+#publicMenuFooter li{
+    float: left;
+    margin-left: 10px;
+}
+#publicMenuFooter a:link, #publicMenuFooter a:active, #publicMenuFooter a:visited{
+    display:block;
+    color:#ffffff;
+    text-decoration:none;
+}

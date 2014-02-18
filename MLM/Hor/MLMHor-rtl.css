@@ -1,22 +1,22 @@
-#publicMenu{
+.MLMHor{
     direction: rtl;
     text-align: right;
 }
-#publicMenu li{
+.MLMHor li{
     float:right;
 }
 
-#publicMenu li ul a{
+.MLMHor li ul a{
     float:right;/*neccessary - li falls one step down*/
 }
 
-#publicMenu li ul ul {
+.MLMHor li ul ul {
     right:12em;
     margin-right:2.1em;
 }
 
-#publicMenu>li>a{
-    border-left:1px solid #4C6930;
+.MLMHor>li>a{
+    border-left:1px solid .4C6930;
     border-right:0;
 }
 
@@ -31,7 +31,7 @@
     background-position: 4% 57%;
 }
 /*Footer*/
-#publicMenuFooter li{
+.MLMHorFooter li{
     float:right;
     margin-right: 10px;
 }

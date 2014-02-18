@@ -1,9 +1,9 @@
-#publicMenu{
+.MLMHor{
     direction: ltr;
     text-align: left;
     z-index:1;
 }
-#publicMenu, #publicMenu ul{
+.MLMHor, .MLMHor ul{
     margin:0;
     padding:0;
     list-style-type:none;
@@ -14,7 +14,7 @@
     line-height:3em;
     margin: 0 auto;
 }
-#publicMenu a:link, #publicMenu a:active, #publicMenu a:visited{
+.MLMHor a:link, .MLMHor a:active, .MLMHor a:visited{
     display:block;
     padding:0 1.15em;
     color:#ffffff;
@@ -22,52 +22,52 @@
     background-color:#789E44;
 }
 
-#publicMenu>li>a{
+.MLMHor>li>a{
     border-right:1px solid #4C6930;
     border-left:none;
 }
 
-#publicMenu>li:last-child>a{
+.MLMHor>li:last-child>a{
     border:none;
 }
 
-#publicMenu a:hover{
+.MLMHor a:hover{
     background-color:#4C6930;
 }
-#publicMenu li{
+.MLMHor li{
     float:left;
     position:relative;/*No use*/
 }
 
-#publicMenu ul {
+.MLMHor ul {
     position:absolute; /*Make the <li>s appear in front ant of calling elements not under*/
     width:12em;
     top:3em;/*No need - The same value as line height*/
     display:none;
 }
 
-#publicMenu li ul a{
+.MLMHor li ul a{
     width:12em;
     float:left;/*neccessary - li falls one step down*/
     border-bottom: 0.1em solid #4C6930;
 }
 
-#publicMenu ul ul{
+.MLMHor ul ul{
     top:auto;/*no use*/
 }
 
-#publicMenu li ul ul {
+.MLMHor li ul ul {
     left:12em;
     margin-left:2.1em;
 }
 
-#publicMenu li:hover ul ul, #publicMenu li:hover ul ul ul, #publicMenu li:hover ul ul ul ul{
+.MLMHor li:hover ul ul, .MLMHor li:hover ul ul ul, .MLMHor li:hover ul ul ul ul{
     display:none;
 }
-#publicMenu li:hover ul, #publicMenu li li:hover ul, #publicMenu li li li:hover ul, #publicMenu li li li li:hover ul{
+.MLMHor li:hover ul, .MLMHor li li:hover ul, .MLMHor li li li:hover ul, .MLMHor li li li li:hover ul{
     display:block;
 }
-#publicMenu a.current
+.MLMHor a.current
 {
     background-color: white;
     color:black;
@@ -84,12 +84,12 @@
     background-position: 91% 57%;
 }
 /*footer*/
-#publicMenuFooter{
+.MLMHorFooter{
     direction: ltr;
     text-align: left;
     z-index:1;
 }
-#publicMenuFooter{
+.MLMHorFooter{
     margin:0;
     padding:0;
     list-style-type:none;
@@ -99,11 +99,11 @@
     display: inline-block;/*For just IE*/;
     margin: 0 auto;
 }
-#publicMenuFooter li{
+.MLMHorFooter li{
     float: left;
     margin-left: 10px;
 }
-#publicMenuFooter a:link, #publicMenuFooter a:active, #publicMenuFooter a:visited{
+.MLMHorFooter a:link, .MLMHorFooter a:active, .MLMHorFooter a:visited{
     display:block;
     color:#ffffff;
     text-decoration:none;
